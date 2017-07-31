@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "Essays 1743";
+  src: url("../fonts/Essays1743.eot?") format("eot"), url("../fonts/Essays1743.woff") format("woff"), url("../fonts/Essays1743.ttf") format("truetype");
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0px;
+	font: 25px "Essays 1743";
+}
+
+table, th, td{
+	padding: 5px;
+	border: 1px solid black;
+}
+iframe{
+	margin: 0 auto;
+	display: none;
+}
+.register-form > input,
+.register-form > select,
+.register-form > textarea{
+	width: 45%;
+	font-size: 130%;
+	display: block;
+	margin: 15px 0;
+}
+
+.register-form > input[type="checkbox"]{
+	display: inline-block;
+	width: auto;
+}
