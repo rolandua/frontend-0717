@@ -29,3 +29,20 @@ iframe{
 	display: inline-block;
 	width: auto;
 }
+.toc__header{
+	text-decoration: underline;
+	color:blue;
+	cursor: pointer;
+}
+#tocCheckbox{
+display: none;
+}
+
+#tocCheckbox:checked + #toc{
+	display: none;
+}
+.hero__img{
+	margin: 15px auto;
+	display: block;
+}
+
