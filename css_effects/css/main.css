@@ -1,0 +1,101 @@
+.avatar__user{
+	border-radius: 40px 0 40px 0;
+	cursor: pointer;
+}
+.avatar__user:hover{
+	border-radius: 0 40px 0 40px;
+	transition: all 1s;
+}
+.bg__origin{
+	width: 300px;
+	height: 300px;
+	padding: 5px;
+	box-sizing: border-box;
+	border: 20px solid #000;
+	border-radius: 50%;
+	background:yellow no-repeat center center;
+	text-align: center;
+	background-size: contain;
+	background-clip: content-box;
+}
+.bg__origin:hover{
+	transition: all .5s;
+}
+.bg__origin > span{
+	display: inline-block;
+	margin-top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.text__samples{
+	width: 200px;
+	height: 200px;
+	margin: 50px auto;
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	overflow: hidden;	
+	white-space: nowrap;
+	text-overflow: '__';
+	-webkit-text-overflow: '__';
+	/*text-overflow: ellipsis;*/
+	box-shadow: -3px 3px 14px #000;
+	background-image: repeating-linear-gradient(45deg,
+      #000,
+      rgba(26,198,204,0) 3%,
+      rgba(255,255,255,0) 5%)
+}
+
+.text__samples + h1{
+	background: linear-gradient(210deg, blue, #ccc);
+	text-align: center;
+	text-shadow: -3px 3px 14px #000;
+}
+.gradient__sample{
+	width: 250px;
+	height: 250px;
+	margin: 10px auto;
+	background-image: radial-gradient(circle at center, rgba(0, 0, 255, 0) 0%, #000 95%),
+	url(../img/salma.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.gradient__sample:hover{
+	background-image:	url(../img/salma.jpg);
+	transition: all 1s;
+}
+.transform__samples{
+	width: 300px;
+	height: 300px;
+	margin: 0 auto;
+	background-color: green;
+	transition: all .5s .5s;
+}
+.transform__samples:hover{
+	transition: transform 1s .5s ease-out, background-color 1s;
+	transform: skewx(30deg);
+	background-color: yellow;
+}
+
+.animation__samples{
+	width: 300px;
+	height: 300px;
+	margin: 30px auto;
+	background-color: lime;
+	animation: my_animation 3s infinite linear;
+	/*animation-fill-mode: backwards;*/
+}
+.animation__samples:hover{
+	/*animation-play-state: paused;*/
+	animation-direction: reverse;
+}
+
+@keyframes my_animation {
+	to {
+		transform:rotate(300deg); 
+	}
+}
+
+

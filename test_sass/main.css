@@ -1,0 +1,26 @@
+body{
+	margin:0;
+	box-sizing: border-box;
+}
+.container{
+	display: flex;
+	width: 85%;
+	margin:0 auto;
+	border:1px solid #bebebe;
+}
+.inblock{
+	width: 250px;
+	height: 250px;
+	margin: 5px;
+	background: #abc;
+}
+.list{
+	display: block;
+	padding: 0;
+}
+.list > li{
+	display: inline-block;
+	background-color: grey;
+	padding: 0;
+	margin: 0;
+}

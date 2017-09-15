@@ -1,0 +1,124 @@
+body{
+	font-size: 120%;
+}
+h1, h2, p { 
+	text-align: center;
+	color: grey;
+} 
+
+p{
+	text-align: justify;
+}
+
+
+
+.sample__list{
+	border: 1px solid #ccc;
+	list-style-type:lower-cyrillic-uk;
+	list-style-image: url(http://css-plus.com/wp-content/uploads/2011/12/pseudo-element-bullet-featured.png);
+	list-style-position: inside;
+} 
+
+.sample__list ~ .but{
+	border-width:10px;
+}
+.but{
+	padding: 10px 25px;
+	background: red;
+	border: 1px solid #fee;
+	color: #fff;
+	border-radius: 10% 50%;
+	font-weight: 700;
+}
+
+.but-square{
+	border-radius: 0;
+}
+.but-icon{
+	width: 30px;
+	height: 30px;
+	background: transparent;
+	background-image: url(http://getspritexy.com/images/sample-sprite-getspritexy.png);
+	background-position: 0px -5px;
+	background-repeat: no-repeat;
+	color: #000;
+}
+.icon-new{
+	background-position: -35px -5px;
+}
+.center{
+	margin: 0 auto;
+}
+button.center{
+	margin-left: 50%;
+	transform: translateX(-50%);
+}
+.bg__sample{
+	height: 600px;
+	border: 1px solid #ccc;
+	margin: 0 25px;
+	overflow: auto;
+
+	background-color: rgba(0,0,0,.2);	
+	background-image: url(http://www.clipartlord.com/wp-content/uploads/2014/05/kiwi5.png),
+	url(http://1.bp.blogspot.com/-hyvhlBuSdAs/UbD4UIo56FI/AAAAAAAAEE4/CK5-vMC9oiE/s1600/Seamless+white+crease+paper+texture.jpg);
+	background-repeat: no-repeat;
+	background-position: center center, 0 0;
+	background-attachment: local;
+	background-size: 100% 100%, auto;
+	
+}
+
+.text__sample{
+	margin:20px;
+	padding: 10px;
+	border: 1px solid #000;
+
+	color:gray;
+	text-align: left;
+	text-decoration: none;
+	text-transform: lowercase;
+	text-indent: 50%;
+}
+
+.font__sample{
+	width: 400px;
+	font: 2em/1.2em;
+	font-family: tahoma,arial, serif;
+	font-weight: 400;
+	font-style:italic;
+	font-size:2em;
+}
+.font__sample > span{
+	font-size: 1.2vmax;
+}
+
+.sample__link{	
+	padding: 5px;
+	text-decoration: none;
+	border-bottom: 1px dashed red;
+}
+.sample__link:visited,
+.sample__link:active,
+.sample__link:link{
+	color: gray;
+}
+.sample__link:hover{
+	background-color: yellow;
+	border-bottom: 1px solid grey;
+	border-radius: 4px;
+	transition: all .7s ease-in;
+}
+
+.image__sample{
+	width: 40%;
+	max-width: 350px;
+	margin-left: 50%;
+	transform: translateX(-50%);
+}
+
+
+
+
+
+

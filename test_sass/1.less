@@ -1,0 +1,26 @@
+
+￼.bradius(@radius:50%){
+  -webkit-border-radius:@radius;
+  -moz-border-radius:@radius;
+  border-radius:@radius;
+}
+
+div{
+  .bradius(12px);
+}
+
+.bordered {
+    border-top: dotted 1px black;
+    border-bottom: solid 2px black;
+}
+
+// We reuse the contents of the bordered class
+// in #menu a and .post a
+#menu a {
+    color: #111;
+    .bordered;
+}
+.post a {
+    color: red;
+    .bordered;
+}

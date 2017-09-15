@@ -1,0 +1,18 @@
+header{
+	background-color: grey;
+}
+.header__info{
+	font-size: 28px;
+}
+.socials > i{
+
+}
+.hero-banner{
+	background-color: #ccc;
+}
+
+.container div::selection{
+	color:blue;
+	text-decoration: underline;
+	background-color: yellow;
+}

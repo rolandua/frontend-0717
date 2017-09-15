@@ -1,0 +1,16 @@
+body{
+	margin:0;
+	box-sizing: border-box;
+}
+.container{
+	display: flex;
+	width: 85%;
+	margin:0 auto;
+	border:1px solid #bebebe;
+}
+.inblock{
+	width: 250px;
+	height: 250px;
+	margin: 5px;
+	background: #abc;
+}

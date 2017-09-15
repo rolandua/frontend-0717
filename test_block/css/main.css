@@ -1,0 +1,127 @@
+body{
+	padding: 0;
+	margin:0;
+}
+.grid{
+	box-sizing: border-box;
+	width: 20%;
+	height: 100px;
+	float: left;
+	padding: 5px;
+	margin:0;
+	border: 1px solid #000;
+}
+.grid-2x{
+	width: 40%;
+}
+.clasical__block{
+	width: 400px;
+	margin:20px;
+	padding: 5px;
+	background-color: yellow;
+	border: 1px solid #000;
+	box-sizing: border-box;
+	clear: both;
+}
+
+.clasical__block2{
+	display: inline-block;
+	margin-left: -10px;
+	padding: 10px;
+	border: 1px dashed #000;
+	cursor: pointer;
+}
+.clasical__block3{
+	opacity: 0;
+	height: 0;
+	transition: opacity 2s, height 2s 0s;
+}
+a{
+	margin:10px;
+}
+
+.custom-pos{
+	position: absolute;
+}
+
+/* top, right, bottom, left, margin - підтримуть негативні значення*/
+
+.absolute{
+	position: absolute;
+	top:0;
+	left:0;
+	border: 1px solid #000;
+	width: 100px;
+	height: 10px;
+}
+.absolute:last-child{
+	right:0;
+	left: auto;
+}
+.container{
+	position: static;
+	width: 400px;
+	height: 200px;
+	margin: 50px;
+	border: 1px solid red;
+}
+.cont1{
+	position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******* Some info about CSS attribute seletor */
+a[title=content]{
+	background-color: gray;
+}
+
+/*a[title]{
+	background-color: gray;
+}*/
+
+a[class~=red-link]{
+	text-decoration: line-through;
+}
+.usual__linkred-link{
+	text-decoration: none;
+}
+
+a[class*=red-link]{
+	text-decoration: underline;
+}
+a[href^=https]{
+	margin-left:9px;
+	background-color: yellow;
+}
+a[href$=png]{
+	background-color: #000;
+	color: #fff;
+}
+html[lang|=uk]{
+	background-color: #000;
+	color: #fff;
+}
+[data-text=important]{
+	font-size: 150%;
+}
